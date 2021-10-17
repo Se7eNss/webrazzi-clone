@@ -1,0 +1,17 @@
+
+
+.articles-wrapper {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+}
+
+.content {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+.writer {
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 17px;
+}
