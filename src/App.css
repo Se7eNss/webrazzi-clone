@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
 body{
     background:  #F2F2F3;
     overflow-x: hidden;
 }
+
 .container{
     width: 70%;
 }
@@ -15,6 +22,7 @@ body{
 
 .item{
     font-family:'Inter', sans-serif;
+    font-weight: 600;
     font-size: 14px;
     margin-left: 10px;
     margin-top: 20px;
@@ -46,5 +54,39 @@ body{
 }
 
 .frame{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.headerEffect{
+    height: 192px;
+    z-index: -0.1;
+}
+.headerEffect>h1{
+    font-family:'Inter', sans-serif;
+    font-size: 36px;
+    line-height: 43,57px;
+    color: #ffffff;
     
+}
+
+.allframe{
+    margin-top: -100px;
+    
+}
+
+.headerPop{
+    font-family:'Inter', sans-serif;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 22px;
+    line-height: 26px;
+    background:#E1E1E2 ;
+}
+footer{
+    background-color: #E5E5E6;
 }

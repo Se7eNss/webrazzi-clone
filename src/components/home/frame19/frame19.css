@@ -1,0 +1,20 @@
+.popular-wrapper{
+    padding: 10px;
+    background-color: white;
+}
+.popular-wrapper >.baslik{
+    padding-top: 23px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+.popular-wrapper>.writer{
+    padding-top:11px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 17px;
+}

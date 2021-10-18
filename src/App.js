@@ -2,16 +2,20 @@ import React from 'react'
 import Header from './components/layouts/Header'
 import SectionOne from './components/home/SectionOne'
 import SectionTwo from './components/home/SectionTwo'
+import Footer from './components/layouts/Footer'
 import { BrowserRouter as Router , Route } from 'react-router-dom'
 import "./app.css"
 
 const app = () => {
     return (
         <Router>
-             <div className="App">
+             <div className="App" >
                 <Header/>
-                <SectionOne/>
-                <SectionTwo/>
+                <div className="frame mb-3" style={{backgroundImage: ` url("/images/frame.png")`}}> 
+                    <SectionOne/>
+                    <SectionTwo/>
+                </div>
+                <Footer/>
             </div>
         </Router>
     )
