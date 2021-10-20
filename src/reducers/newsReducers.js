@@ -14,7 +14,7 @@ export const newsReducer = (state={news:[]},action)=>{
                 }
         case NEWS_SUCCESS:
             return{
-                news: action.payload,
+                news: action.payload.articles,
             }
         case NEWS_FAIL:
             return{
