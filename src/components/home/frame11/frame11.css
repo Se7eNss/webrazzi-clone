@@ -37,5 +37,6 @@
 .frame-img>img{
   width: 95%;
   height: 100%;
+  border-radius: 28px ;
 }
 
