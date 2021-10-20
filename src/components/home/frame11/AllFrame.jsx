@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react'
+import React, { Fragment, useEffect,useState } from 'react'
 import Frame11 from './Frame11'
 
 import {getNews} from '../../../actions/newsActions';
@@ -12,13 +12,15 @@ const AllFrame = () => {
             return alert.error(error)
         }
         dispatch(getNews())
-    },[])
+    },[dispatch])
+    console.log(news)
     return (
         <Fragment>
                 <div className="col-lg-8 col-md-12">
-                   {news.map(n =>{
-                        <Frame11 n={n}/>
-                   })}
+                   {news.slice(0,5).map(newa =>(
+                        <Frame11 newa={newa}/>
+                   ))}
+                   
             
                 </div>
         </Fragment>
