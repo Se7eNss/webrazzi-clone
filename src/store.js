@@ -1,10 +1,11 @@
 import { createStore,combineReducers , applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
-import {newsReducer} from './reducers/newsReducers'
+import {newsReducer,popularNewsReducer} from './reducers/newsReducers'
 
 const reducer = combineReducers({
-    news:newsReducer
+    news:newsReducer,
+    popularNews:popularNewsReducer
 })
 
 let initialState = {};

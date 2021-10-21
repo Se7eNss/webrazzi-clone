@@ -13,7 +13,6 @@ const AllFrame = () => {
         }
         dispatch(getNews())
     },[dispatch])
-    console.log(news)
     return (
         <Fragment>
                 <div className="col-lg-8 col-md-12">
