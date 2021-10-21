@@ -5,20 +5,22 @@ import SectionTwo from './components/home/SectionTwo'
 import Footer from './components/layouts/Footer'
 import { BrowserRouter as Router , Route } from 'react-router-dom'
 import "./app.css"
+import { useSelector } from 'react-redux'
 
-const app = () => {
+const App = () => {
+    
     return (
         <Router>
-             <div className="App" >
+                <div className="App" >
                 <Header/>
                 <div className="frame mb-3" style={{backgroundImage: ` url("/images/frame.png")`}}> 
                     <SectionOne/>
                     <SectionTwo/>
                 </div>
                 <Footer/>
-            </div>
+                </div>         
         </Router>
     )
 }
 
-export default app
+export default App

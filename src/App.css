@@ -35,8 +35,9 @@ body{
     height: 1px;
     margin-left: 23px;
     top: 30px;
-    border: 1px solid #000000;
+    border: .1px solid #000000;
     transform: rotate(90deg);
+    background-color: #000;
 }
 .btnHamburger{
     margin: 6px 0;
@@ -49,7 +50,7 @@ body{
     margin-left: auto;
 }
 .icons > .icon-item{
-    margin-left: 10px;
+    margin-left: 30px;
     cursor: pointer;
 }
 
@@ -57,7 +58,8 @@ body{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: 100% 100%;
+    background-size: 80% 50%;
+    background-position: center 20px;
     background-repeat: no-repeat;
 }
 
