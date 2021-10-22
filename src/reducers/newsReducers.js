@@ -38,13 +38,11 @@ export const newsReducer = (state={news:[]},action)=>{
 export const popularNewsReducer = (state={popularNews:[]},action)=>{
     switch (action.type) {
         case POPULAR_NEWS_REQUEST:
-                return{
-                    loading:true,
+                return{ 
                     popularNews:[]
                 }
         case POPULAR_NEWS_SUCCESS:
             return{
-                loading:false,
                 popularNews: action.payload.articles,
             }
         case POPULAR_NEWS_FAIL:

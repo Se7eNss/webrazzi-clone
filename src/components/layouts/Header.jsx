@@ -4,7 +4,8 @@ import {DonutNavBarIcon , ProfileIcon ,SearchIcon ,BellIcon} from '../../Icon'
 import NavItem from './NavItem'
 
 const Header = () => {
-    return (
+    
+    return (    
         <Fragment>
             <nav className="nav navbar-expand-lg border">
                 <div className="container d-flex ">
