@@ -3,8 +3,9 @@ import AllFrame from './frame11/AllFrame'
 import AllFrame19 from './frame19/AllFrame19'
 const SectionTwo = () => {
     return (
+        
         <Fragment>
-            <div className="row">
+                <div className="row">
                 <div className="headerEffect mt-3" style={{backgroundImage: ` url("/images/HeaderEffect.png")`}}>
                     <h1 className="col-lg-8 offset-2 mt-4">Son Eklenenler</h1>
                 </div>  
@@ -14,7 +15,7 @@ const SectionTwo = () => {
                     <AllFrame/>
                     <AllFrame19/>
                 </div>
-            </div>
+            </div>     
         </Fragment>
        
     )

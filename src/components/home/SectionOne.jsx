@@ -1,19 +1,19 @@
+import _ from 'lodash'
 import React from 'react'
+import { useSelector } from 'react-redux'
 import AllItem from './featuredItem/AllItem'
 import Main from './main/Main'
-import { useSelector } from 'react-redux'
+
 const SectionOne = () => {
-    const{loading}=useSelector(state=>state.popularNews)
+    const {popularNews} = useSelector(state=>state.popularNews)
+    const mainNew = _.head(popularNews)
     return (
-        <>
-        {loading ? ('LOADİNG'):(
         <div className="container">
             <div className="row">
-                <Main/>
+                {mainNew && <Main mainNew={mainNew}/>}
                 <AllItem/>
             </div>
-        </div>)}
-        </>
+        </div>
     )
 }
 

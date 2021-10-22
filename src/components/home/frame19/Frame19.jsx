@@ -1,7 +1,7 @@
 import React from 'react'
 import './frame19.css'
 
-const frame19 = ({pop}) => {
+const frame19 = ({ pop }) => {
 
     return (
         <div className="popular-wrapper col-lg-12 ">
